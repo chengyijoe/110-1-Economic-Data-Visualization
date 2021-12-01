@@ -2,9 +2,9 @@
 library(readr)
 library(tidyverse)
 library(dplyr)
-GDP <- read_csv("C:/Users/Joe/Downloads/A17030000J-000016-wWs.csv")
-GDP$¥¢·~²v->y
-GDP$¤ë§O->x
+GDP <- read_csv("https://raw.githubusercontent.com/chengyijoe/110-1-Economic-Data-Visualization/main/A17030000J-000016-wWs%20(1).csv")
+GDP$å¤±æ¥­çŽ‡->y
+GDP$æœˆåˆ¥->x
 breaksx=x
 labelsx=c("2020-09","10","11","12","2021-01","02","03","04","05","06","07","08","09")
 
@@ -28,12 +28,12 @@ ggplot()+
   scale_x_discrete(
     breaks=breaksx,
     labels=labelsx,
-    name="¤ë§O"
+    name="æœˆåˆ¥"
   )+
   labs(
-    title="¤@¦~¨Ó¥¢·~²vÅÜ¤Æ",
+    title="ä¸€å¹´ä¾†å¤±æ¥­çŽ‡è®ŠåŒ–",
     caption="Source:https://data.gov.tw/")+
-  scale_fill_manual(values=c("#f00000","#ff8103","#ffdd03","#a3ff03","#127001","#00f2b2","#0443b0","#8157de","#931bcf","#cf1bba","#cf1b87","#0d0105","#595355"),name="¤ë¥÷")+
+  scale_fill_manual(values=c("#f00000","#ff8103","#ffdd03","#a3ff03","#127001","#00f2b2","#0443b0","#8157de","#931bcf","#cf1bba","#cf1b87","#0d0105","#595355"),name="æœˆä»½")+
   theme_light(
     base_family = "",
     base_line_size =0.4,
