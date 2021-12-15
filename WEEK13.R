@@ -1,21 +1,20 @@
-```{r}
-df<-data.frame(x=c("«ÌªF¿¤\n18.3%","»O«n¥«\n15.1%","\n10.9%","¹Å¸q¿¤\n10.5%","«n§ë¿¤\n10.2%","¨ä¥L\n43.2%"),
+
+df<-data.frame(x=c("å±æ±ç¸£\n18.3%","è‡ºå—å¸‚\n15.1%","é«˜é›„å¸‚\n10.9%","å˜‰ç¾©ç¸£\n10.5%","å—æŠ•ç¸£\n10.2%","å…¶ä»–\n43.2%"),
                y=c(0.183,0.151,0.109,0.105,0.102,0.432),
                level=c("1","1","1","1","1","1"))
 
 ggplot(df, aes(x = level, y=y, fill = x, alpha = level)) +
   geom_col(width = 1, color = 'white', size = 0.25, position = position_stack()) +
-  geom_text(aes(label = x), size = 2.5, position = position_stack(vjust = 0.55)) +
+  geom_text(aes(label = x), size = 5, position = position_stack(vjust = 0.55)) +
   coord_polar(theta = 'y') +
   scale_alpha_manual(values = c('0' = 0, '1' = 1, '2' = 0.7), guide = F) +
-  scale_fill_manual(values = c("#BED3D4","#F02B4D","#FA6129","#0080F0","#0001E0","#E0F4F5"),
+  scale_fill_manual(values = c("red","orange","yellow","green","blue","purple"),
                     names(NULL),
                     breaks = NULL
   )+
   scale_x_discrete(breaks = NULL) +
   scale_y_continuous(breaks = NULL) +
   
-  labs(x = NULL, y = NULL,title = "¢°¢¯¢¸¦~ ªG «~ ¥Í ²£ ·§ ªp") +
+  labs(x = NULL, y = NULL,title = "ï¼‘ï¼ï¼™å¹´å°ç£æ°´æžœåœ°å€å æ¯”",size=45) +
   theme_minimal()
-#­ì¥»·Q¥ÎMAP§e²{
-```
+#åŽŸæœ¬æƒ³ç”¨MAPå‘ˆç¾
